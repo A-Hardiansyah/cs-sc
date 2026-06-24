@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Information Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+        <h2>Service Portal</h2>
+
+        <ul>
+            <li onclick="showPage('dashboard')">🏠 Dashboard</li>
+            <li onclick="showPage('logservice')">📚 Log Service</li>
+            <li onclick="showPage('technician')">🔧 Technician Code</li>
+            <li onclick="showPage('coordination')">📋 Holded Coordination</li>
+        </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+
+        <!-- DASHBOARD -->
+        <section id="dashboard" class="page active">
+            <h1>Dashboard</h1>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Log Service</h3>
+                    <p>125</p>
+                </div>
+
+                <div class="card">
+                    <h3>Technician Code</h3>
+                    <p>54</p>
+                </div>
+
+                <div class="card">
+                    <h3>Open Coordination</h3>
+                    <p>12</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- LOG SERVICE -->
+        <section id="logservice" class="page">
+
+            <h1>Log Service</h1>
+
+            <div class="article">
+
+                <h2>Rice Cooker Tidak Panas</h2>
+
+                <p><b>Kategori :</b> Rice Cooker</p>
+
+                <p>
+                    Unit tidak panas biasanya disebabkan oleh:
+                </p>
+
+                <ul>
+                    <li>Thermostat rusak</li>
+                    <li>Heater putus</li>
+                    <li>Thermal fuse putus</li>
+                </ul>
+
+                <p>
+                    Lakukan pengecekan continuity menggunakan multitester.
+                </p>
+
+                <img src="https://via.placeholder.com/700x350"
+                     alt="gambar">
+            </div>
+
+        </section>
+
+        <!-- TECHNICIAN -->
+        <section id="technician" class="page">
+
+            <h1>Technician Code & Exploded View</h1>
+
+            <div class="article">
+
+                <h2>Model : CH-RC18A</h2>
+
+                <table>
+
+                    <tr>
+                        <th>Code</th>
+                        <th>Description</th>
+                    </tr>
+
+                    <tr>
+                        <td>E01</td>
+                        <td>Thermostat Open</td>
+                    </tr>
+
+                    <tr>
+                        <td>E02</td>
+                        <td>Heater Open</td>
+                    </tr>
+
+                    <tr>
+                        <td>E03</td>
+                        <td>Sensor Error</td>
+                    </tr>
+
+                </table>
+
+                <h3>Exploded View</h3>
+
+                <img src="https://via.placeholder.com/700x350"
+                     alt="exploded">
+
+            </div>
+
+        </section>
+
+        <!-- COORDINATION -->
+        <section id="coordination" class="page">
+
+            <h1>Holded Coordination</h1>
+
+            <div class="form">
+
+                <input type="text" placeholder="Ticket No">
+
+                <input type="text" placeholder="Model">
+
+                <textarea
+                    placeholder="Holded Coordination">
+                </textarea>
+
+                <textarea
+                    placeholder="Answer">
+                </textarea>
+
+                <select>
+                    <option>Open</option>
+                    <option>Waiting CS</option>
+                    <option>Waiting SC</option>
+                    <option>Closed</option>
+                </select>
+
+                <button>Save</button>
+
+            </div>
+
+            <table class="coord-table">
+
+                <tr>
+                    <th>Ticket</th>
+                    <th>Model</th>
+                    <th>Holded Coordination</th>
+                    <th>Answer</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>SRV001</td>
+                    <td>RC18A</td>
+                    <td>Waiting approval heater replacement</td>
+                    <td>Approved</td>
+                    <td>Closed</td>
+                </tr>
+
+                <tr>
+                    <td>SRV002</td>
+                    <td>RC18A</td>
+                    <td>Waiting PCB stock</td>
+                    <td>ETA 7 Days</td>
+                    <td>Open</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+    </main>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
